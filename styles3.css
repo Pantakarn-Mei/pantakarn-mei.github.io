@@ -1,0 +1,128 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic styling to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px; /* กำหนดขนาดสูงสุดของ logo */
+    height: auto;
+    margin-left: 20px; /* ระยะห่างระหว่าง logo กับ header text */
+}
+
+header h1 {
+    margin: 0; /* ลบ margin ที่ถูกกำหนดไว้โดย default */
+    flex-grow: 1; /* ทำให้ h1 ขยายขนาดเพื่อเติมพื้นที่ที่เหลือ */
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+img {
+    justify-content: center;
+    border: 2px solid #333; /* กำหนดขนาดและสีของกรอบ */
+    border-radius: 8px; /* กำหนดขนาดของมุมกรอบ */
+    display:flex; /* ปรับให้รูปภาพเป็น block element */
+    max-width: 100%; /* ปรับให้รูปภาพไม่เกินขนาดตามความกว้างของพื้นที่ */
+}
+
+/* Style the main content section */
+main {
+    padding: 20px;
+}
+
+main.flex-container {
+    display: flex;
+    color: #fff;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+section.flex-item {
+    margin-right: 20px;
+    width: 500px;
+    
+}
+
+.flex-d1 {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+aside.flex-item {
+    flex-basis: 300px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+main.flex-container section {
+    background-color: #333;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.image {
+    
+    border-radius: 50%; /* กำหนดขนาดของมุมกรอบ */
+   
+}
+
+

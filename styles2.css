@@ -1,0 +1,114 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic styling to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #f5f5f5;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px; /* กำหนดขนาดสูงสุดของ logo */
+    height: auto;
+    margin-left: 20px; /* ระยะห่างระหว่าง logo กับ header text */
+}
+
+header h1 {
+    margin: 0; /* ลบ margin ที่ถูกกำหนดไว้โดย default */
+    flex-grow: 1; /* ทำให้ h1 ขยายขนาดเพื่อเติมพื้นที่ที่เหลือ */
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+img {
+    justify-content: center;
+    border: 2px solid #333; /* กำหนดขนาดและสีของกรอบ */
+    border-radius: 8px; /* กำหนดขนาดของมุมกรอบ */
+    display: block; /* ปรับให้รูปภาพเป็น block element */
+    margin: auto; /* จัดให้รูปภาพอยู่ตรงกลาง */
+    max-width: 100%; /* ปรับให้รูปภาพไม่เกินขนาดตามความกว้างของพื้นที่ */
+}
+
+/* Style the main content section */
+main {
+    padding: 20px;
+}
+
+
+main.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section.flex-item {
+    padding: 10px;          
+    background-color: #333;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+aside.flex-item {
+    flex-basis: 300px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add some styles for links */
+a {
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Arial, "sans-serif";
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+
