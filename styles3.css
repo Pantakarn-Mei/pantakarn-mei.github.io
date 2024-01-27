@@ -125,8 +125,10 @@ main.flex-container section {
    
 }
 
-.a {
-    text-align: center;
+@media only screen and (max-device-width: 414px) {
+    /* Styles specific for iPhone screens */
+    /* You can adjust the max-device-width to target specific iPhone models */
+    section.flex-item {
+        width: 2300px;
+    }
 }
-
-
